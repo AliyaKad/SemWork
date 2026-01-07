@@ -7,6 +7,7 @@ plugins {
     id("com.google.firebase.crashlytics")
     id("com.google.firebase.firebase-perf")
     id("com.google.dagger.hilt.android")
+    id("io.gitlab.arturbosch.detekt")
 
 }
 
@@ -43,6 +44,11 @@ android {
     buildFeatures {
         compose = true
     }
+}
+detekt {
+    toolVersion = "1.23.0"
+    config = files("${rootProject.projectDir}/config/detekt.yml")
+    buildUponDefaultConfig = true
 }
 
 dependencies {

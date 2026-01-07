@@ -10,4 +10,5 @@ plugins {
     alias(libs.plugins.jetbrains.kotlin.jvm) apply false
     alias(libs.plugins.ksp)
     id("com.google.dagger.hilt.android") version "2.56.1" apply false
+    id("io.gitlab.arturbosch.detekt") version "1.23.0" apply false
 }
