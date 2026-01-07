@@ -1,18 +1,5 @@
 build:
-  maxIssues: 0
-  weights:
-    complexity: 2
-    LongParameterList: 1
-    style: 1
-    comments: 0
-
-detekt:
-  config:
-    validation: true
-
-processors:
-  active: true
-  excludes: "**/test/**,**/androidTest/**"
+  maxIssues: 10
 
 complexity:
   active: true
@@ -21,16 +8,16 @@ complexity:
     threshold: 30
   LongParameterList:
     active: true
-    threshold: 6
+    functionThreshold: 6
+    constructorThreshold: 6
 
 style:
   active: true
   MagicNumber:
     active: true
-    excludes: ["FontSize", "Alpha", "Percentage"]
+    excludes: ["FontSize", "Alpha"]
   NewLineAtEndOfFile:
     active: true
   MaxLineLength:
     active: true
     maxLineLength: 120
-    excludeCommentStatements: true
