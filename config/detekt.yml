@@ -12,16 +12,7 @@ complexity:
     constructorThreshold: 6
 
 style:
-  active: true
-  MagicNumber:
-    active: false
-  NewLineAtEndOfFile:
-    active: true
-  FunctionNaming:
-    active: false
-  MaxLineLength:
-    active: true
-    maxLineLength: 120
+  active: false
 
 exceptions:
   active: true
