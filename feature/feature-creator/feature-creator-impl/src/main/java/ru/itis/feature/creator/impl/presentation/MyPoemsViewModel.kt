@@ -104,20 +104,21 @@ class MyPoemsViewModel @Inject constructor(
     fun confirmDelete(poem: Poem) = intent {
         logEvent("my_poems_delete_confirmed", mapOf(
             "poem_title" to poem.title,
+            "poem_author" to poem.author,
             "total_poems_before" to state.poems.size
         ))
 
-        val poemId = generatePoemId(poem)
-        reduce { state.copy(deletingPoemId = poemId) }
+        reduce { state.copy(deletingPoemId = "${poem.author}_${poem.title}") }
 
         val trace = performanceHelper.startTrace("poem_delete_operation")
 
         viewModelScope.launch {
             try {
-                deletePoemUseCase(poemId)
+                deletePoemUseCase(poem.author, poem.title)
 
                 logEvent("my_poems_delete_success", mapOf(
                     "poem_title" to poem.title,
+                    "poem_author" to poem.author,
                     "total_poems_after" to (state.poems.size - 1)
                 ))
 
@@ -131,7 +132,8 @@ class MyPoemsViewModel @Inject constructor(
                 logError(e)
                 logEvent("my_poems_delete_failed", mapOf(
                     "error_type" to (e::class.simpleName ?: "Unknown"),
-                    "poem_title" to poem.title
+                    "poem_title" to poem.title,
+                    "poem_author" to poem.author
                 ))
 
                 trace.incrementMetric("error_count", 1)
@@ -152,9 +154,5 @@ class MyPoemsViewModel @Inject constructor(
                 }
             }
         }
-    }
-
-    private fun generatePoemId(poem: Poem): String {
-        return "${poem.author}_${poem.title}".hashCode().toString()
     }
 }

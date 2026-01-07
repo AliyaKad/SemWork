@@ -63,8 +63,11 @@ class UserPoemsRepositoryImpl @Inject constructor(
         dao.insert(mapper.toEntity(poem, userId))
     }
 
-    override suspend fun deletePoem(poemId: String) {
+    override suspend fun deletePoem(author: String, title: String) {
         val userId = getCurrentUserId() ?: return
+
+        val poemId = "${userId}_${author}_${title}".hashCode().toString()
+
         dao.deleteById(userId, poemId)
     }
 

@@ -8,7 +8,7 @@ class DeletePoemUseCaseImpl @Inject constructor(
     private val repository: UserPoemsRepository
 ) : DeletePoemUseCase {
 
-    override suspend operator fun invoke(poemId: String) {
-        repository.deletePoem(poemId)
+    override suspend operator fun invoke(author: String, title: String) {
+        repository.deletePoem(author, title)
     }
 }
