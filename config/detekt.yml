@@ -17,6 +17,15 @@ style:
     active: false
   NewLineAtEndOfFile:
     active: true
+    FunctionNaming:
+      active: false
   MaxLineLength:
     active: true
     maxLineLength: 120
+
+exceptions:
+  active: true
+  TooGenericExceptionCaught:
+    active: false
+  SwallowedException:
+    active: false
