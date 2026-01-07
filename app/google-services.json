@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "513978676934",
+    "project_id": "semwork-53000",
+    "storage_bucket": "semwork-53000.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:513978676934:android:ced0e9a47c7afa8ef849c7",
+        "android_client_info": {
+          "package_name": "ru.itis.semwork"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyACC6vD4cKfrtpjj1uDZMlqLQ0dqLDV-Ks"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
