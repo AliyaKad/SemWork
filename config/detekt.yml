@@ -17,8 +17,8 @@ style:
     active: false
   NewLineAtEndOfFile:
     active: true
-    FunctionNaming:
-      active: false
+  FunctionNaming:
+    active: false
   MaxLineLength:
     active: true
     maxLineLength: 120
