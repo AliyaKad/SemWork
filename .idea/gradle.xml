@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="GradleMigrationSettings" migrationVersion="1" />
+  <component name="GradleSettings">
+    <option name="linkedExternalProjectsSettings">
+      <GradleProjectSettings>
+        <option name="testRunner" value="CHOOSE_PER_TEST" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="gradleJvm" value="#GRADLE_LOCAL_JAVA_HOME" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$" />
+            <option value="$PROJECT_DIR$/app" />
+            <option value="$PROJECT_DIR$/core" />
+            <option value="$PROJECT_DIR$/core/core-analytics" />
+            <option value="$PROJECT_DIR$/core/core-data" />
+            <option value="$PROJECT_DIR$/core/core-models" />
+            <option value="$PROJECT_DIR$/core/core-network" />
+            <option value="$PROJECT_DIR$/core/core-ui" />
+            <option value="$PROJECT_DIR$/feature" />
+            <option value="$PROJECT_DIR$/feature/feature-auth" />
+            <option value="$PROJECT_DIR$/feature/feature-auth/feature-auth-api" />
+            <option value="$PROJECT_DIR$/feature/feature-auth/feature-auth-impl" />
+            <option value="$PROJECT_DIR$/feature/feature-creator" />
+            <option value="$PROJECT_DIR$/feature/feature-creator/feature-creator-api" />
+            <option value="$PROJECT_DIR$/feature/feature-creator/feature-creator-impl" />
+            <option value="$PROJECT_DIR$/feature/feature-favorites" />
+            <option value="$PROJECT_DIR$/feature/feature-favorites/feature-favorites-api" />
+            <option value="$PROJECT_DIR$/feature/feature-favorites/feature-favorites-impl" />
+            <option value="$PROJECT_DIR$/feature/feature-random" />
+            <option value="$PROJECT_DIR$/feature/feature-random/feature-random-api" />
+            <option value="$PROJECT_DIR$/feature/feature-random/feature-random-impl" />
+            <option value="$PROJECT_DIR$/feature/feature-search" />
+            <option value="$PROJECT_DIR$/feature/feature-search/feature-search-api" />
+            <option value="$PROJECT_DIR$/feature/feature-search/feature-search-impl" />
+          </set>
+        </option>
+      </GradleProjectSettings>
+    </option>
+  </component>
+</project>

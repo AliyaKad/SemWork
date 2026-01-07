@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <bytecodeTargetLevel target="11">
+      <module name="SemWork.feature-holiday-api" target="21" />
+      <module name="SemWork.feature-holiday-impl" target="21" />
+      <module name="SemWork.feature-trip-api" target="21" />
+      <module name="SemWork.feature-trip-impl" target="21" />
+      <module name="SemWork.feature-weather-api" target="21" />
+      <module name="SemWork.feature-weather-impl" target="21" />
+    </bytecodeTargetLevel>
+  </component>
+</project>
